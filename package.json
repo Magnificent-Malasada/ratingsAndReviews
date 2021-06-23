@@ -1,0 +1,23 @@
+{
+  "name": "ratingsandreviews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mongodb.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mongoose": "^5.12.14"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Magnificent-Malasada/ratingsAndReviews.git"
+  },
+  "author": "Emma Helser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Magnificent-Malasada/ratingsAndReviews/issues"
+  },
+  "homepage": "https://github.com/Magnificent-Malasada/ratingsAndReviews#readme"
+}
