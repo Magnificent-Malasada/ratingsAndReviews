@@ -2,10 +2,12 @@
   "name": "ratingsandreviews",
   "version": "1.0.0",
   "description": "",
-  "main": "mongodb.js",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "mongoose": "^5.12.14"
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14",
+    "mysql": "^2.18.1"
   },
   "scripts": {
     "test": "test"

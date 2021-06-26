@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/fetcher');
 
 let productReviewSchema = mongoose.Schema({
+  product_id: Number,
   reviews: [{
     review_id: Number,
-    product_id: Number,
     rating: Number,
     summary: String,
     recommend: Boolean,
@@ -13,9 +13,12 @@ let productReviewSchema = mongoose.Schema({
     date: Date,
     reviewer_name: String,
     helpfulness: Boolean,
-    photos: Object,
+    photos: [],
     email: String,
-    characteristics: Object
+    characteristics: [{
+      characteristic_name: String,
+      characteristic_value: Number
+    }]
   }]
 })
 
@@ -23,8 +26,8 @@ let productReviewMetaSchema = mongoose.Schema({
   product_id: Number,
   rating: Number,
   recommended: Number,
-  characteristics: Object,
-  reviews: Array
+  characteristics: {},
+  number_of_reviews: Number
 })
 
 let productReviews = mongoose.model('productReview', productReviewSchema);
