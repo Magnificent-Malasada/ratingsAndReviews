@@ -1,10 +1,10 @@
-LOAD DATA LOCAL INFILE '/Users/Emma/HackReactorApril2021/SDC_Data/characteristics_reviews.csv'
+LOAD DATA LOCAL INFILE '/Users/Emma/HackReactorApril2021/SDC_Data/characteristicss.csv'
 INTO TABLE characteristics_products
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
 
-LOAD DATA LOCAL INFILE '/Users/Emma/HackReactorApril2021/SDC_Data/characteristics.csv'
+LOAD DATA LOCAL INFILE '/Users/Emma/HackReactorApril2021/SDC_Data/characteristic_reviews.csv'
 INTO TABLE review_characteristics
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
