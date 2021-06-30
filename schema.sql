@@ -16,7 +16,8 @@ CREATE TABLE review_characteristics (
   characteristic_id INT,
   review_id INT,
   characteristic_value INT,
-  FOREIGN KEY (characteristic_id) REFERENCES characteristics_products(id)
+  FOREIGN KEY (characteristic_id) REFERENCES characteristics_products(id),
+  PRIMARY KEY (id)
 );
 
 CREATE TABLE product_reviews (
