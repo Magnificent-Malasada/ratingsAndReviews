@@ -14,7 +14,7 @@
   "scripts": {
     "test": "test",
     "start": "nodemon run Server/index.js",
-    "database setup": "mysql -u root -p < schema.sql"
+    "database_setup": "mysql -u root -p < schema.sql"
   },
   "repository": {
     "type": "git",
