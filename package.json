@@ -5,12 +5,15 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.14",
     "mysql": "^2.18.1"
   },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node run Server/index.js",
+    "database setup": "mysql -u root -p < schema.sql"
   },
   "repository": {
     "type": "git",

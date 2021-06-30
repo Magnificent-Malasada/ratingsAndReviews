@@ -1,4 +1,5 @@
 var mysql = require('mysql');
+require('dotenv').config();
 
 
 module.exports  = {
@@ -6,7 +7,7 @@ module.exports  = {
     connectionLimit : 100,
     host            : 'localhost',
     user            : 'root',
-    password        : 'password',
+    password        : process.env.token,
     database        : 'SDCReviews'
   })
 }
