@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3002;
-const askDB = require('../requestData.js');
+const askDB = require('./requestData.js');
 
 app.use(express.json());
 app.listen(3002, (req, res) => {
