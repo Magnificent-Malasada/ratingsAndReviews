@@ -5,9 +5,9 @@ require('dotenv').config();
 module.exports  = {
   con: mysql.createPool({
     connectionLimit : 100,
-    host            : '13.52.181.234',
-    user            : 'root',
-    password        : '$tink3r!Butt*',
+    host            : 13.52.181.234,
+    user            : 'serverUser',
+    password        : process.env.token,
     database        : 'SDCReviews'
   })
 }
