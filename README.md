@@ -21,3 +21,19 @@ To set up the developer environment run.
 
 ```bash
 npm install
+```
+
+To start the server.
+
+```bash
+npm start
+```
+
+To set up MySQL database.
+
+```bash
+npm run database_setup
+```
+
+## Usage
+
