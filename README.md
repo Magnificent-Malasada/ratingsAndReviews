@@ -23,6 +23,8 @@ To set up the developer environment run.
 npm install
 ```
 
+## Usage
+
 To start the server.
 
 ```bash
@@ -35,5 +37,31 @@ To set up MySQL database.
 npm run database_setup
 ```
 
-## Usage
+To list reviews from the database
+
+```
+GET /reviews/product_id=:id
+```
+
+To report a review.
+
+```
+PUT /reviews/:review_id/report
+```
+
+To mark a review as helpful.
+
+```
+PATCH /reviews/:review_id/helpful
+```
+
+To add a new review.
+
+```
+POST /reviews/product_id=:id
+```
+
+## Author
+
+Emma Helser
 
